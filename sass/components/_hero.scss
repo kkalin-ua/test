@@ -1,0 +1,302 @@
+.list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+
+.sections {
+	// width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+
+  @media screen and (min-width: 1200px) {
+		width: 1200px;
+	}
+
+	// padding-left: 15px;
+	// padding-right: 15px;
+
+
+	// @media screen and (min-width: 320px) {
+	// 	width: 100%;
+	// }
+	// @media screen and (min-width: 768px) {
+	// 	width: 100%;
+	// }
+	// @media screen and (min-width: 1200px) {
+	// 	width: 1200px;
+	// }
+}
+
+// hero
+.hero {
+  background: #84A278;
+
+  @media screen and (max-width: 320px) {
+   height: calc(502px - 99px);
+  }
+
+  @media screen and (min-width: 768px) {
+    height: calc(415px - 80px);
+   }
+
+   @media screen and (min-width: 1200px) {
+    height: calc(664px - 118px);
+   }
+ 
+}
+.sections {
+  position: relative;
+}
+
+.hero-title {
+  font-family: 'Seymour One';
+  font-style: normal;
+  font-weight: 400;  
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #FCFCFC;
+
+  @media screen and (max-width: 320px) {
+    padding-left: 20px;
+    margin-bottom: 32px;
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 1199.9px) {
+    padding-left: 32px;
+    margin-bottom: 24px;
+  }
+  
+  @media screen and (max-width: 1199.9px) {
+    font-size: 22px;
+    line-height: calc (33 / 26);
+    width: 250px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: calc (48 / 38);
+    width: 370px;
+    padding-left: 16px;
+    margin-bottom: 28px;
+	}
+}
+.hero-img_ice {
+  position: absolute;
+  right: 60px;
+  top: 186px;
+
+  @media screen and (min-width: 768px) {
+    right: 95px;
+    top: 6px;
+  } 
+  @media screen and (min-width: 1200px) {
+    right: 95px;
+    top: -15px;
+    }
+
+
+}
+.hero-img_point {
+  position: absolute;
+  top: 351px;
+
+  @media screen and (min-width: 768px) {
+    top: 265px;
+  } 
+
+  @media screen and (min-width: 1200px) {
+    top: 159px;
+    }
+
+}
+
+.hero-title__span {
+  @media screen and (max-width: 1199.9px) {
+    font-size: 27px;
+  }
+}
+
+
+
+// about-product
+.about-product {
+  display: flex;
+  gap: 12px;
+  margin-left: 32px;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 16px;
+	}
+
+}
+.about-products,
+.about-product_made {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(15 / 12);
+}
+
+.about-products {
+  padding: 11px 26px;
+  text-align: center;
+  color: #000000;
+
+  border: 2px solid #F8D24E;
+  border-radius: 8px;
+
+  @media screen and (max-width: 280px) {
+    padding: 0;
+    border: none;
+	}
+
+}
+.about-product_made {
+  padding: 11px 12px;
+  text-align: center;
+  // text-decoration: underline;
+  text-decoration-line: underline;
+  color: #F8D24E;
+
+  @media screen and (max-width: 280px) {
+    padding: 0;  
+	}
+
+}
+
+
+// cafes_truck
+
+.cafes_truck {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+
+  @media screen and (max-width: 400px) {
+    display: none;
+	}
+
+
+  @media screen and (max-width: 1199px) {
+    right: 32px;
+	}
+
+
+}
+
+.cafes_truck_number,
+.cafes_truck_kind {
+  padding: 0;
+	margin: 0;
+  font-family: 'Montserrat';
+  font-style: normal;
+  text-align: right;
+}
+
+
+.cafes_truck_number {
+  font-weight: 900;
+  font-size: 28px;
+  line-height: calc(34 / 28);
+
+  letter-spacing: 0.04em;
+
+  color: #131313;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 46px;
+    line-height: calc(56 / 46);
+	}
+
+}
+
+.cafes_truck_kind {
+  font-weight: 400;
+  font-size: 8px;
+  line-height: calc(10 / 8);
+
+  color: #FCFCFC;
+
+  margin-top: 4px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: calc(17 / 14);
+	}
+
+}
+
+
+
+
+
+
+// many-ice
+.many-ice {
+  
+  @media screen and (max-width: 320px) {
+    display: none;
+	} 
+}
+
+.many-ice_img {
+  position: absolute;
+  left: 16px;
+  top: 258px;
+
+  @media screen and (min-width: 768px) {
+    left: 32px;
+    top: 163px;
+	} 
+}
+
+.many-ice_text {
+  position: absolute;
+  left: 260px;
+  top: 320px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: #FCFCFC;
+  width: 140px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 12px;
+    width: 140px;
+    left: 208px;
+    top: 175px;
+	} 
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    width: 200px;
+    left: 260px;
+    top: 320px;
+	} 
+}
+
+.many-ice_arrow {
+  position: absolute;
+  left: 260px;
+  top: 430px;
+
+  @media screen and (min-width: 768px) {
+    left: 208px;
+    top: 290px;
+	} 
+
+
+  @media screen and (min-width: 1200px) {
+    left: 260px;
+    top: 430px;
+	} 
+
+}
+
+
+

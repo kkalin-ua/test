@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hero</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&family=Seymour+One&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+
+    <link rel="stylesheet" href="./css/main.min.css">
+
+  </head>
+<body>
+
+
+  <section class="hero">
+    <div class="sections">
+      <h1 class="hero-title">ice cream made with <span class="hero-title__span">passion</span> </h1>
+
+      <img class="hero-img_point"
+            srcset="
+            ./img/points_mobile.png 320w, 
+            ./img/points_tablet.png 768w, 
+            ./img/points_desktop.png 1200w, 
+            "  
+            sizes="
+            (min-width: 1200px) 1200px,
+            (min-width: 768px) 768px,
+            (min-width: 320px) 320px"
+                        
+            src="./img/points_desktop.png" 
+            alt="points_foto">
+
+
+      <img class="hero-img_ice" 
+            srcset="
+            ./img/ice-cream_mobile.png 217w, 
+            ./img/ice-cream_tablet.png 329w, 
+            ./img/ice-cream_desktop.png 560w, 
+            "  
+            sizes="
+            (min-width: 1200px) 560px,
+            (min-width: 768px) 329px,
+            (min-width: 320px) 217px"
+            
+            src="./img/ice-cream_desktop.png" 
+            alt="ice-cream_foto">
+
+
+      <div class="about-product">
+        <h3 class="about-products" id="products">Products</h3>
+        <h3 class="about-product_made" id="how_it’s_made">How it’s made?</h3>
+      </div>
+  
+      <div class="cafes_truck">
+        <ul class="cafes_truck_list list">
+          <li class="cafes_truck_item">
+            <p class="cafes_truck_number">16</p>
+            <p class="cafes_truck_kind">cafes</p>
+          </li>
+          <li class="cafes_truck_item">
+            <p class="cafes_truck_number">23</p>
+            <p class="cafes_truck_kind">food trucks</p>
+          </li>
+        </ul>
+      </div>
+  
+      <div class="many-ice">
+        <img 
+        srcset="
+        ./img/many-ice-cream_tablet.png 152w, 
+        ./img/many-ice-cream_desktop.png 225w"
+
+        sizes="
+        (min-width: 1200px) 225px,
+        (min-width: 768px) 152px,"
+
+        src="./img/many-ice-cream_desktop.png"
+        class="many-ice_img"
+        alt="many-ice-cream_foto">
+        <p class="many-ice_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+        <img class="many-ice_arrow" src="./img/Arrow.png" alt="arrow-foto">
+      </div>
+  
+      <div>
+      </div>
+  
+    </div>
+
+  </section>
+
+    
+    
+</body>
+</html>
