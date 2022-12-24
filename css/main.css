@@ -223,13 +223,20 @@
 
 .many-ice_img {
   position: absolute;
-  left: 16px;
-  top: 258px;
+  display: none;
 }
 @media screen and (min-width: 768px) {
   .many-ice_img {
+    display: block;
     left: 32px;
     top: 163px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .many-ice_img {
+    display: block;
+    left: 16px;
+    top: 253px;
   }
 }
 
