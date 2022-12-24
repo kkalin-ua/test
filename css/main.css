@@ -5,8 +5,19 @@
 }
 
 .sections {
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 320px) {
+  .sections {
+    width: 320px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .sections {
+    width: 768px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .sections {
@@ -15,9 +26,10 @@
 }
 
 .hero {
+  height: 403px;
   background: #84A278;
 }
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 320px) {
   .hero {
     height: 403px;
   }
@@ -38,9 +50,12 @@
 }
 
 .hero-title {
+  width: 70%;
   font-family: "Seymour One";
   font-style: normal;
   font-weight: 400;
+  font-size: 23px;
+  line-height: calc 1.3076923077;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #FCFCFC;
@@ -49,24 +64,19 @@
   .hero-title {
     padding-left: 20px;
     margin-bottom: 32px;
+    width: 70%;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 1199.9px) {
+@media screen and (min-width: 768px) {
   .hero-title {
     padding-left: 32px;
     margin-bottom: 24px;
-  }
-}
-@media screen and (max-width: 1199.9px) {
-  .hero-title {
-    font-size: 22px;
-    line-height: calc 1.2692307692;
     width: 250px;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero-title {
-    font-size: 36px;
+    font-size: 38px;
     line-height: calc 1.2631578947;
     width: 370px;
     padding-left: 16px;
@@ -242,6 +252,7 @@
 
 .many-ice_text {
   position: absolute;
+  display: none;
   left: 260px;
   top: 320px;
   font-family: "Montserrat";
@@ -252,8 +263,9 @@
   color: #FCFCFC;
   width: 140px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .many-ice_text {
+    display: block;
     font-size: 12px;
     width: 140px;
     left: 208px;
@@ -262,6 +274,7 @@
 }
 @media screen and (min-width: 1200px) {
   .many-ice_text {
+    display: block;
     font-size: 14px;
     width: 200px;
     left: 260px;
