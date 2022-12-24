@@ -157,12 +157,15 @@
   font-weight: 600;
   font-size: 12px;
   line-height: 1.25;
+  z-index: 22;
+  height: 42px;
 }
 
 .about-products {
   padding: 11px 26px;
   text-align: center;
   color: #000000;
+  text-decoration: none;
   border: 2px solid #F8D24E;
   border-radius: 8px;
 }
@@ -171,6 +174,10 @@
     padding: 0;
     border: none;
   }
+}
+.about-products:hover {
+  border: 2px solid #131313;
+  color: #F8D24E;
 }
 
 .about-product_made {
@@ -184,6 +191,11 @@
   .about-product_made {
     padding: 0;
   }
+}
+.about-product_made:hover {
+  border: 2px solid #F8D24E;
+  color: #131313;
+  border-radius: 8px;
 }
 
 .cafes_truck {
