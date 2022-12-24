@@ -22,34 +22,47 @@
     <div class="sections">
       <h1 class="hero-title">ice cream made with <span class="hero-title__span">passion</span> </h1>
 
-      <img class="hero-img_point"
-            srcset="
-            ./img/points_mobile.png 320w, 
-            ./img/points_tablet.png 768w, 
-            ./img/points_desktop.png 1200w, 
-            "  
-            sizes="
-            (min-width: 1200px) 1200px,
-            (min-width: 768px) 768px,
-            (min-width: 320px) 320px"
-                        
-            src="./img/points_desktop.png" 
-            alt="points_foto">
+            <picture>
+              <source
+                  srcset="./img/points_desktop.png 1x, 
+                          ./img/points_desktop2x.png 2x"
+                  media="(min-width: 1200px)" />
+              <source
+                  srcset="./img/points_tablet.png 1x, 
+                          ./img/points_tablet2x.png 2x"
+                  media="(min-width: 768px)" />
+              <source
+                  srcset="./img/points_mobile.png 1x, 
+                          ./img/points_mobile2x.png 2x"
+                  media="(max-width: 767px)" />
+              <img 
+                  class="hero-img_point" 
+                  src="./img/points_mobile.png"
+                  alt="points_foto">
+          </picture>
 
 
-      <img class="hero-img_ice" 
-            srcset="
-            ./img/ice-cream_mobile.png 217w, 
-            ./img/ice-cream_tablet.png 329w, 
-            ./img/ice-cream_desktop.png 560w, 
-            "  
-            sizes="
-            (min-width: 1200px) 560px,
-            (min-width: 768px) 329px,
-            (min-width: 320px) 217px"
-            
-            src="./img/ice-cream_mobile.png" 
-            alt="ice-cream_foto">
+          <picture>
+              <source
+                  srcset="./img/ice-cream_desktop.png 1x, 
+                          ./img/ice-cream_desktop2x.png 2x"
+                  media="(min-width: 1200px)" />
+              <source
+                  srcset="./img/ice-cream_tablet.png 1x, 
+                          ./img/ice-cream_tablet2x.png 2x"
+                  media="(min-width: 768px)" />
+              <source
+                  srcset="./img/ice-cream_mobile.png 1x, 
+                          ./img/ice-cream_mobile2x.png 2x"
+                  media="(max-width: 767px)" />
+              <img 
+                  class="hero-img_ice" 
+                  src="./img/points_mobile.png"
+                  alt="ice-cream_foto">
+          </picture>
+
+
+
 
 
       <div class="about-product">
@@ -71,18 +84,23 @@
       </div>
   
       <div class="many-ice">
-        <img 
-        srcset="
-        ./img/many-ice-cream_tablet.png 152w, 
-        ./img/many-ice-cream_desktop.png 225w"
 
-        sizes="
-        (min-width: 1200px) 225px,
-        (min-width: 768px) 152px,"
+        <picture>
+          <source
+              srcset="./img/many-ice-cream_desktop.png 1x, 
+                      ./img/many-ice-cream_desktop2x.png 2x"
+              media="(min-width: 1200px)" />
+          <source
+              srcset="./img/many-ice-cream_tablet.png 1x, 
+                      ./img/many-ice-cream_tablet2x.png 2x"
+              media="(min-width: 768px)" />
+          <img 
+              class="many-ice_img effects"
+              src="./img/many-ice-cream_tablet.png"
+              alt="many-ice-cream_foto">
+      </picture>
 
-        src="./img/many-ice-cream_desktop.png"
-        class="many-ice_img"
-        alt="many-ice-cream_foto">
+
         <p class="many-ice_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
         <img class="many-ice_arrow" src="./img/Arrow.png" alt="arrow-foto">
       </div>

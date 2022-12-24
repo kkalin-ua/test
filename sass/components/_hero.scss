@@ -65,30 +65,49 @@
   font-style: normal;
   font-weight: 400;
   font-size: 23px;
-  line-height: calc (34 / 26);
+  line-height: calc(34 / 26);
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #FCFCFC;
 
-  @media screen and (max-width: 320px) {
+
+  @media screen and (max-width: 767px) {
     padding-left: 20px;
     margin-bottom: 32px;
     width: 70%;
+
+    font-size: 21px;
+    line-height: 1.27;
   }
-  
-  @media screen and (min-width: 768px) {
-    padding-left: 32px;
-    margin-bottom: 24px;
+  @media screen and (min-width: 767px) and (max-width: 1199px) {
+    font-size: 19px;
+    line-height: 1.27;
     width: 250px;
   }
 
   @media screen and (min-width: 1200px) {
     font-size: 38px;
-    line-height: calc (48 / 38);
-    width: 370px;
+    line-height: 1.26;
+    width: 372px;
+
     padding-left: 16px;
     margin-bottom: 28px;
 	}
+}
+.hero-title__span {
+  @media screen and (max-width: 767px) {
+    font-size: 29px;
+    line-height: 1.03;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 24px;
+    line-height: 0.54;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 38px;
+  }
 }
 .hero-img_ice {
   position: absolute;
@@ -103,8 +122,6 @@
     right: 95px;
     top: -15px;
     }
-
-
 }
 .hero-img_point {
   position: absolute;
@@ -120,11 +137,7 @@
 
 }
 
-.hero-title__span {
-  @media screen and (max-width: 1199.9px) {
-    font-size: 27px;
-  }
-}
+
 
 
 
@@ -186,11 +199,13 @@
   @media screen and (max-width: 400px) {
     display: none;
 	}
-
-
-  @media screen and (max-width: 1199px) {
-    right: 32px;
+  @media screen and (min-width: 400px) and (max-width: 767px) {
+    right: 0;
 	}
+
+  @media screen and (min-width: 768px) {
+    right: 32px;
+  }
 
 
 }
@@ -265,8 +280,47 @@
     left: 16px;
     top: 253px;
 	} 
-
 }
+.effects {
+  animation-name: pulsar;
+  animation-duration: 4500ms;
+  animation-timing-function: linear;
+  animation-delay: 500ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 154px;
+    left: 32px;
+    bottom: 13px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 225px;
+    left: 16px;
+    bottom: 61px;
+  }
+}
+
+@keyframes pulsar {
+  0% {
+    scale: 0.9;
+  }
+
+  50% {
+    scale: 1.1;
+  }
+
+  100% {
+    scale: 0.9;
+  }
+}
+
+
 
 .many-ice_text {
   position: absolute;

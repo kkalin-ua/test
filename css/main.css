@@ -55,32 +55,52 @@
   font-style: normal;
   font-weight: 400;
   font-size: 23px;
-  line-height: calc 1.3076923077;
+  line-height: 1.3076923077;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #FCFCFC;
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 767px) {
   .hero-title {
     padding-left: 20px;
     margin-bottom: 32px;
     width: 70%;
+    font-size: 21px;
+    line-height: 1.27;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) and (max-width: 1199px) {
   .hero-title {
-    padding-left: 32px;
-    margin-bottom: 24px;
+    font-size: 19px;
+    line-height: 1.27;
     width: 250px;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero-title {
     font-size: 38px;
-    line-height: calc 1.2631578947;
-    width: 370px;
+    line-height: 1.26;
+    width: 372px;
     padding-left: 16px;
     margin-bottom: 28px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero-title__span {
+    font-size: 29px;
+    line-height: 1.03;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero-title__span {
+    font-size: 24px;
+    line-height: 0.54;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-title__span {
+    font-size: 38px;
   }
 }
 
@@ -114,12 +134,6 @@
 @media screen and (min-width: 1200px) {
   .hero-img_point {
     top: 159px;
-  }
-}
-
-@media screen and (max-width: 1199.9px) {
-  .hero-title__span {
-    font-size: 27px;
   }
 }
 
@@ -182,7 +196,12 @@
     display: none;
   }
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 400px) and (max-width: 767px) {
+  .cafes_truck {
+    right: 0;
+  }
+}
+@media screen and (min-width: 768px) {
   .cafes_truck {
     right: 32px;
   }
@@ -250,6 +269,63 @@
   }
 }
 
+.effects {
+  -webkit-animation-name: pulsar;
+          animation-name: pulsar;
+  -webkit-animation-duration: 4500ms;
+          animation-duration: 4500ms;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+@media screen and (max-width: 767px) {
+  .effects {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .effects {
+    width: 154px;
+    left: 32px;
+    bottom: 13px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .effects {
+    width: 225px;
+    left: 16px;
+    bottom: 61px;
+  }
+}
+
+@-webkit-keyframes pulsar {
+  0% {
+    scale: 0.9;
+  }
+  50% {
+    scale: 1.1;
+  }
+  100% {
+    scale: 0.9;
+  }
+}
+
+@keyframes pulsar {
+  0% {
+    scale: 0.9;
+  }
+  50% {
+    scale: 1.1;
+  }
+  100% {
+    scale: 0.9;
+  }
+}
 .many-ice_text {
   position: absolute;
   display: none;
